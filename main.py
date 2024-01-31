@@ -1,6 +1,6 @@
 import re
 
-dictionary = ["Apple", "Helpy", "Bagel", "Phone", "Siren", "Octal", "Phaze", "Bugel", "Zooty"]
+infile = open("fiveLetters.txt", "r")
 
 #potential letters for each spot
 potentialLetters = input("Enter potential letters: ")
@@ -27,7 +27,7 @@ for i in range(5):
 print("Pattern is: " + pattern)
 
 #loop over the words in dictionary to see if there is a match
-for words in dictionary:
-    if re.match(pattern, words.upper()):
-        print(words)
+for word in infile:
+    if re.match(pattern, word.upper()):
+        print(word)
 
