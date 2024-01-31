@@ -29,5 +29,5 @@ print("Pattern is: " + pattern)
 #loop over the words in dictionary to see if there is a match
 for word in infile:
     if re.match(pattern, word.upper()):
-        print(word, end=" ")
+        print(word, end="")
 
