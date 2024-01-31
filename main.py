@@ -5,7 +5,7 @@ infile = open("fiveLetters.txt", "r")
 #potential letters for each spot
 potentialLetters = input("Enter potential letters: ")
 
-#create regex for our letter
+#create regex for any letter
 anyPattern = "["
 for letter in potentialLetters:
     anyPattern += letter.upper()
@@ -29,5 +29,5 @@ print("Pattern is: " + pattern)
 #loop over the words in dictionary to see if there is a match
 for word in infile:
     if re.match(pattern, word.upper()):
-        print(word)
+        print(word, end=" ")
 
