@@ -15,7 +15,7 @@ anyPattern += "]"
 pattern = "" #overall regex pattern
 #construct the overall pattern
 for i in range(5):
-    userInput = input("Enter the letter in position " + str(i) + ", or use * for any of the potential letters: ")
+    userInput = input("Enter the letter in position " + str(i+1) + ", or use * for any of the potential letters: ")
     if(len(userInput) != 1):
         print("Please enter only one character.")
     else:
